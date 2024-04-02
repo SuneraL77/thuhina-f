@@ -50,6 +50,15 @@ const data = [
   },
   {
     label:
+    <Link to='/admin/topads'>
+      <div className='flex items-center gap-5 py-2'>
+        <RiAdvertisementLine size={20} />
+        <span className='text-lg lg:text-lg md:text-base'>Top Ads</span>
+      </div>
+    </Link>,
+  },
+  {
+    label:
     <Link to='/admin/package_management'>
       <div className='flex items-center gap-5 py-2'>
         <LuPackage size={20} />

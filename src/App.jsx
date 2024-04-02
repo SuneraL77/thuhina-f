@@ -38,6 +38,7 @@ import MagazineManagement from './pages/admin/magazine/MagazineManagement';
 import AddNewMagazine from './pages/admin/magazine/AddNewMagazine';
 import UpdateMagazine from './pages/admin/magazine/UpdateMagazine';
 import AdminMessage from './pages/admin/message/Message';
+import TopAds from './pages/admin/topAd/TopAds';
 
 function App() {
 
@@ -74,6 +75,7 @@ function App() {
             <Route path="/admin/dashboard" element={<Dashboard />} />
             <Route path="/admin/user_management" element={<UserManagement />} />
             <Route path="/admin/ad_management" element={<AdManagement/>} />
+            <Route path="/admin/topads" element={<TopAds/>} />
             <Route path="/admin/package_management" element={<PackagesManagement/>} />
             <Route path="/admin/package_management/add_new" element={<AddNewPackage/>} />
             <Route path="/admin/package_management/delete" element={<DeletePackage/>} />
