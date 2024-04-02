@@ -26,7 +26,7 @@ const Hero = () => {
                         clickable: true,
                         el: ".swiper-hero-pagination",
                     }}
-                    loop={true}
+                    // loop={true}
                     className={`w-full relative`}
                 >
                     <SwiperSlide>
