@@ -2,7 +2,7 @@ import { Button, Input } from '@mantine/core'
 import React from 'react'
 import { IoSearchSharp } from 'react-icons/io5'
 import { Link } from 'react-router-dom'
-import ManageMagazineCard from '../../components/cards/ManageMagazineCard'
+import ManageMagazineCard from '../../../components/cards/ManageMagazineCard'
 
 const MagazineManagement = () => {
     return (

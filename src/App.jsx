@@ -3,41 +3,41 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import GuestLayout from './components/layouts/GuestLayout';
 import Home from './pages/Home';
-import Login from './pages/Login';
-import Register from './pages/Register';
-import MyProfile from './pages/MyProfile';
-import Advertisement from './pages/Advertisement';
-import AddAdvertisement from './pages/AddAdvertisement';
-import Single_view from './pages/Single_view';
-import EditAdvertisement from './pages/EditAdvertisement';
+import Login from './pages/auth/Login';
+import Register from './pages/auth/Register';
+import MyProfile from './pages/user/MyProfile';
+import Advertisement from './pages/advertisement/Advertisement';
+import AddAdvertisement from './pages/advertisement/AddAdvertisement';
+import SingleView from './pages/Single_view';
+import EditAdvertisement from './pages/advertisement/EditAdvertisement';
 import Contact from './pages/Contact';
 import Packages from './pages/Packages';
-import Blogs from './pages/Blogs';
-import BlogsSingle from './pages/BlogsSingle';
-import Magazine from './pages/Magazine';
-import Message from './pages/Message';
-import MyPackages from './pages/MyPackages';
+import Blogs from './pages/blog/Blogs';
+import BlogsSingle from './pages/blog/BlogsSingle';
+import Magazine from './pages/magazine/Magazine';
+import Message from './pages/user/Message';
+import MyPackages from './pages/user/MyPackages';
 import About from './pages/About';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
 
 
 import AdminLayout from './components/layouts/AdminLayout';
-import Dashboard from './pages/admin/Dashboard';
-import UserManagement from './pages/admin/UserManagement';
-import SignIn from './pages/admin/SignIn';
-import AdManagement from './pages/admin/AdManagement';
-import PackagesManagement from './pages/admin/PackagesManagement';
-import AddNewPackage from './pages/admin/AddNewPackage';
-import DeletePackage from './pages/admin/DeletePackage';
-import PaymentHistory from './pages/admin/PaymentHistory';
-import BlogManagement from './pages/admin/BlogManagement';
-import AddNewBlog from './pages/admin/AddNewBlog';
-import UpdateBlog from './pages/admin/UpdateBlog';
-import MagazineManagement from './pages/admin/MagazineManagement';
-import AddNewMagazine from './pages/admin/AddNewMagazine';
-import UpdateMagazine from './pages/admin/UpdateMagazine';
-import AdminMessage from './pages/admin/Message';
+import Dashboard from './pages/admin/dashboard/Dashboard';
+import UserManagement from './pages/admin/user/UserManagement';
+import SignIn from './pages/admin/signin/SignIn';
+import AdManagement from './pages/admin/ads/AdManagement';
+import PackagesManagement from './pages/admin/packages/PackagesManagement';
+import AddNewPackage from './pages/admin/packages/AddNewPackage';
+import DeletePackage from './pages/admin/packages/DeletePackage';
+import PaymentHistory from './pages/admin/payment/PaymentHistory';
+import BlogManagement from './pages/admin/blogs/BlogManagement';
+import AddNewBlog from './pages/admin/blogs/AddNewBlog';
+import UpdateBlog from './pages/admin/blogs/UpdateBlog';
+import MagazineManagement from './pages/admin/magazine/MagazineManagement';
+import AddNewMagazine from './pages/admin/magazine/AddNewMagazine';
+import UpdateMagazine from './pages/admin/magazine/UpdateMagazine';
+import AdminMessage from './pages/admin/message/Message';
 
 function App() {
 
@@ -55,7 +55,7 @@ function App() {
             <Route path="/advertisement" element={<Advertisement />} />
             <Route path="/advertisement/add_new" element={<AddAdvertisement />} />
             <Route path="/advertisement/edit" element={<EditAdvertisement />} />
-            <Route path="/single" element={<Single_view />} />
+            <Route path="/single" element={<SingleView />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/packages" element={<Packages />} />
             <Route path="/blogs" element={<Blogs />} />

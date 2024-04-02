@@ -1,33 +1,30 @@
-import React, { useState } from 'react'
-import Header from '../components/nav/Header'
-import Bg_top from '../assets/images/bg_image_top.png'
-import Bg_bottom from '../assets/images/bg_image_bottom.png'
+import React  from 'react'
+import Header from '../../components/nav/Header'
+import Bg_top from '../../assets/images/bg_image_top.png'
+import Bg_bottom from '../../assets/images/bg_image_bottom.png'
 import { Button, Modal, Radio } from '@mantine/core'
 import { FaPhone } from 'react-icons/fa6'
 import { useDisclosure } from '@mantine/hooks'
 import { Link } from 'react-router-dom'
 import { Upload } from 'antd'
-import { register } from 'react-scroll/modules/mixins/scroller'
+// import { register } from 'react-scroll/modules/mixins/scroller'
 
 const Register = () => {
 
     const [opened, { open, close }] = useDisclosure(false);
 
-    const [first_name,setFisrtName] = useState('');
-    const[last_name,setLastname] = useState('');
-    const [mobile,setMobile] = useState('');
-    const [email,setEmail] = useState('');
-    const [bithday,setBirtDay] = useState('');
-    const [gender,setGender] = useState('');
-    const [front,idImage] = useState([]) 
+//     const [first_name,setFisrtName] = useState('');
+//     const[last_name,setLastname] = useState('');
+//     const [mobile,setMobile] = useState('');
+//     const [email,setEmail] = useState('');
+//     const [bithday,setBirtDay] = useState('');
+//     const [gender,setGender] = useState('');
+//     const [front,idImage] = useState([]) 
 
-const submit = async () =>{
-    const response = await register(first_name,last_name,mobile,email,bithday,gender)
+// const submit = async () =>{
+//     const response = await register(first_name,last_name,mobile,email,bithday,gender)
   
-}
-
-
-
+// }
 
     return (
         <>
@@ -50,34 +47,34 @@ const submit = async () =>{
                             <div className='flex flex-col gap-6'>
                                 <div className='flex flex-col gap-2 px-3'>
                                     <span className='text-[#3B3B3B]'>First Name</span>
-                                    <input  value={first_name} onChange={(e) => setFisrtName(e.target.value)}type='text' className='w-full bg-transparent border-b outline-none' placeholder='Ex: Malindu' />
+                                    <input  type='text' className='w-full bg-transparent border-b outline-none' placeholder='Ex: Malindu' />
                                 </div>
                                 <div className='flex flex-col gap-2 px-3'>
                                     <span className='text-[#3B3B3B]'>Last Name</span>
-                                    <input type='text' value={last_name} onChange={(e) => setLastname(e.target.value) } className='w-full bg-transparent border-b outline-none' placeholder='Ex: Ishan' />
+                                    <input type='text'  className='w-full bg-transparent border-b outline-none' placeholder='Ex: Ishan' />
 
                                 </div>
                                 <div className='flex flex-col gap-2 px-3'>
                                     <span className='text-[#3B3B3B]'>Mobile Number</span>
                                     <div className='flex gap-5'>
-                                        <input type='text' className='w-full bg-transparent border-b outline-none' value={mobile} onChange={(e) => setMobile(e.target.value)} placeholder='Ex: +94 71 23 45 678' />
+                                        <input type='text' className='w-full bg-transparent border-b outline-none'  placeholder='Ex: +94 71 23 45 678' />
                                     </div>
                                 </div>
                                 <div className='flex flex-col gap-2 px-3'>
                                     <span className='text-[#3B3B3B]'>Email Address</span>
-                                    <input type='email' className='w-full bg-transparent border-b outline-none' placeholder='Ex: malindu@gmail.com' value={email} onChange={(e) =>setEmail(e.target.value)} />
+                                    <input type='email' className='w-full bg-transparent border-b outline-none' placeholder='Ex: malindu@gmail.com'  />
 
                                 </div>
                                 <div className='flex flex-col gap-2 px-3'>
                                     <span className='text-[#3B3B3B]'>Birthday</span>
-                                  <input className='w-full bg-transparent border-b outline-none'  value={bithday}  onChange={(e) => setBirtDay(e.target.value)}/>
+                                  <input className='w-full bg-transparent border-b outline-none' />
                                 </div>
                                 <div className='flex flex-col gap-2 px-3'>
                                     <span className='text-[#3B3B3B]'>Gender</span>
 
                                     <div className='flex gap-5'>
-                                        <Radio value="Male" label="Male" onChange={(value) => setGender(value)} />
-                                        <Radio value="Female" label="Female"  onChange={(value) => setGender(value)}/>
+                                        <Radio value="Male" label="Male" />
+                                        <Radio value="Female" label="Female" />
                                     </div>
 
 
@@ -111,7 +108,7 @@ const submit = async () =>{
                                 </div>
                                 <div className='flex justify-center w-full mt-6'>
                                     <div className='w-1/3 md:w-1/5'>
-                                        <Button variant='filled' color='#D5BD81' className='text-black' fullWidth onClick={() => submit()}>Create Account</Button>
+                                        <Button variant='filled' color='#D5BD81' className='text-black' >Create Account</Button>
                                     </div>
 
                                 </div>

@@ -1,8 +1,8 @@
 import React from 'react'
-import Photo from '../assets/images/user.png'
+import Photo from '../../assets/images/user.png'
 import { AiFillSafetyCertificate } from "react-icons/ai"
 import { Button, PasswordInput, Select } from '@mantine/core'
-import Front from '../assets/images/blogs_card.png'
+import Front from '../../assets/images/blogs_card.png'
 
 const MyProfile = () => {
     return (

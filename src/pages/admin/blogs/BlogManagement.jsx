@@ -1,7 +1,7 @@
 import { Button, Input } from '@mantine/core'
 import React from 'react'
 import { IoSearchSharp } from 'react-icons/io5'
-import ManageBlogCard from '../../components/cards/ManageBlogCard'
+import ManageBlogCard from '../../../components/cards/ManageBlogCard'
 import { Link } from 'react-router-dom'
 
 const BlogManagement = () => {

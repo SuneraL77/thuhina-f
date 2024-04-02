@@ -1,9 +1,9 @@
 import { Button } from '@mantine/core'
 import React from 'react'
-import Bg_top from '../../assets/images/bg_image_top.png'
-import Bg_bottom from '../../assets/images/bg_image_bottom.png'
-import NormalPackageCard from '../../components/cards/NormalPackageCard'
-import PopularPackageCard from '../../components/cards/PopularPackageCard'
+import Bg_top from '../../../assets/images/bg_image_top.png'
+import Bg_bottom from '../../../assets/images/bg_image_bottom.png'
+import NormalPackageCard from '../../../components/cards/NormalPackageCard'
+import PopularPackageCard from '../../../components/cards/PopularPackageCard'
 import { Link } from 'react-router-dom'
 
 const PackagesManagement = () => {

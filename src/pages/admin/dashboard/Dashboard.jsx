@@ -1,7 +1,7 @@
 import React from 'react'
-import Vector1 from '../../assets/images/Vector 4.png'
-import Vector2 from '../../assets/images/Vector 5.png'
-import Vector3 from '../../assets/images/Vector 6.png'
+import Vector1 from '../../../assets/images/Vector 4.png'
+import Vector2 from '../../../assets/images/Vector 5.png'
+import Vector3 from '../../../assets/images/Vector 6.png'
 
 
 const Dashboard = () => {

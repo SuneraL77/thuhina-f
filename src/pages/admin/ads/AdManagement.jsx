@@ -2,8 +2,8 @@ import React from 'react'
 import {  Input, Tabs } from '@mantine/core';
 import { IoSearchSharp } from 'react-icons/io5';
  
-import PendingAdCard from '../../components/cards/PendingAdCard';
-import ActiveAdCard from '../../components/cards/ActiveAdCard';
+import PendingAdCard from '../../../components/cards/PendingAdCard';
+import ActiveAdCard from '../../../components/cards/ActiveAdCard';
 
 const AdManagement = () => {
     return (

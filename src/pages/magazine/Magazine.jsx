@@ -1,5 +1,5 @@
 import React from 'react'
-import MagazineCard from '../components/cards/MagazineCard'
+import MagazineCard from '../../components/cards/MagazineCard'
 
 const Magazine = () => {
   return (

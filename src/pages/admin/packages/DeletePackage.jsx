@@ -1,7 +1,7 @@
 import React from 'react'
-import PopularPackageCard from '../../components/cards/PopularPackageCard'
+import PopularPackageCard from '../../../components/cards/PopularPackageCard'
 import { Button } from '@mantine/core'
-import NormalPackageCard from '../../components/cards/NormalPackageCard'
+import NormalPackageCard from '../../../components/cards/NormalPackageCard'
 
 const DeletePackage = () => {
     return (

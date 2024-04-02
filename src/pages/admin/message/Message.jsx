@@ -1,6 +1,5 @@
-import { Button } from '@mantine/core'
 import React from 'react'
-import MessageCard from '../../components/cards/MessageCard'
+import MessageCard from '../../../components/cards/MessageCard'
 
 const Message = () => {
     return (

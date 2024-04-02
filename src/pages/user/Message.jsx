@@ -1,10 +1,10 @@
 import React from 'react'
-import Photo from '../assets/images/user.png'
+import Photo from '../../assets/images/user.png'
 import { FaRegFaceSmile } from "react-icons/fa6";
 import { GrAttachment } from "react-icons/gr";
 import { BsSendFill } from "react-icons/bs";
-import SentMessage from '../components/message/SentMessage';
-import RecieveMessage from '../components/message/RecieveMessage';
+import SentMessage from '../../components/message/SentMessage';
+import RecieveMessage from '../../components/message/RecieveMessage';
 
 const Message = () => {
     return (

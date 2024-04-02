@@ -1,5 +1,5 @@
 import React from 'react'
-import Card_img from '../assets/images/blogs_card.png'
+import Card_img from '../../assets/images/blogs_card.png'
 
 
 const BlogsSingle = () => {

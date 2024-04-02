@@ -3,7 +3,7 @@ import Logo from '../../assets/images/ThuhinaLogo.png'
 import Logo2 from '../../assets/images/Group 1000003323.png'
 import { MdLocalPhone, MdAlternateEmail } from "react-icons/md";
 import { TbWorldWww } from "react-icons/tb";
-import { FaFacebook, FaLocationDot, FaLocationPin, FaSquareInstagram, FaTiktok } from "react-icons/fa6";
+import { FaFacebook, FaLocationDot, FaSquareInstagram, FaTiktok } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 
 const Footer = () => {

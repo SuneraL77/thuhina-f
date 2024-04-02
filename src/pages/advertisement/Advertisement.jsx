@@ -1,6 +1,6 @@
 import React from 'react'
 // import Empty from '../components/advertisement/Empty'
-import MyAdd from '../components/advertisement/MyAdd'
+import MyAdd from '../../components/advertisement/MyAdd'
 
 const Advertisement = () => {
   return (

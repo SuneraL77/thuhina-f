@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button, Tabs } from '@mantine/core';
-import Bg_top from '../assets/images/bg_image_top.png'
-import Bg_bottom from '../assets/images/bg_image_bottom.png'
+import Bg_top from '../../assets/images/bg_image_top.png'
+import Bg_bottom from '../../assets/images/bg_image_bottom.png'
 
 const MyPackages = () => {
 
