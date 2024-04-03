@@ -12,6 +12,7 @@ const AddNewPackage = () => {
 
   const submit = async () => {
     const response = await createPakage(packageName, days, price, description);
+    
     toast.success(response.message);
     setPackageName('');
     setDays('');
