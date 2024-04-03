@@ -1,12 +1,22 @@
 import { Button } from '@mantine/core'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Bg_top from '../../../assets/images/bg_image_top.png'
 import Bg_bottom from '../../../assets/images/bg_image_bottom.png'
 import NormalPackageCard from '../../../components/cards/NormalPackageCard'
 import PopularPackageCard from '../../../components/cards/PopularPackageCard'
 import { Link } from 'react-router-dom'
+import { showPakages } from '../../../functions/addPakckge'
 
 const PackagesManagement = () => {
+const [packges , setPackges] = useState([]);
+
+useEffect(() =>{
+    showPakges()
+},[])
+    const showPakges = async () =>{
+ const response = await showPakages();
+setPackges(response)
+    }
     return (
         <div className='flex flex-col gap-10'>
             <h1 className='text-xl font-medium'>Packages</h1>
@@ -23,10 +33,13 @@ const PackagesManagement = () => {
                         <img src={Bg_top} alt='/' className='hidden md:flex' />
                         <img src={Bg_bottom} alt='/' className='hidden md:flex' />
                         <div className='top-0 left-0 grid justify-center w-full h-full grid-cols-1 gap-10 p-10 md:absolute md:grid-cols-3'>
+{packges.map((c) =>(
+  <NormalPackageCard packge={c}/>
 
-                            <NormalPackageCard />
-                            <PopularPackageCard />
-                            <NormalPackageCard />
+
+))}
+                          
+                         
                             
                         </div>
                     </div>

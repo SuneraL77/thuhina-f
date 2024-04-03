@@ -1,4 +1,5 @@
 import axios from "axios";
+import toast from "react-hot-toast";
 
 
 export const createAccount = async (username) => {
@@ -15,3 +16,6 @@ export const createAccount = async (username) => {
       toast.error(error?.response?.data?.error?.message);
     }
   };
+
+
+
