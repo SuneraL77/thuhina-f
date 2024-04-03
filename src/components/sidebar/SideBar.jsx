@@ -13,6 +13,7 @@ import { BiLogOut } from "react-icons/bi";
 
 const data = [
   {
+    id:1,
     label:
       <Link to='/admin/dashboard'>
         <div className='flex items-center gap-5 py-2'>
@@ -22,6 +23,7 @@ const data = [
       </Link>,
   },
   {
+    id:2,
     label:
     <Link to='/admin/user_management'>
       <div className='flex items-center gap-5 py-2'>
@@ -31,6 +33,7 @@ const data = [
     </Link>,
   },
   {
+    id:3,
     label:
     <Link to='/admin/payment_history'>
       <div className='flex items-center gap-5 py-2'>
@@ -40,6 +43,7 @@ const data = [
     </Link>,
   },
   {
+    id:4,
     label:
     <Link to='/admin/ad_management'>
       <div className='flex items-center gap-5 py-2'>
@@ -49,6 +53,7 @@ const data = [
     </Link>,
   },
   {
+    id:5,
     label:
     <Link to='/admin/topads'>
       <div className='flex items-center gap-5 py-2'>
@@ -58,6 +63,7 @@ const data = [
     </Link>,
   },
   {
+    id:6,
     label:
     <Link to='/admin/package_management'>
       <div className='flex items-center gap-5 py-2'>
@@ -67,6 +73,7 @@ const data = [
     </Link>,
   },
   {
+    id:7,
     label:
     <Link to='/admin/blogs_management'>
       <div className='flex items-center gap-5 py-2'>
@@ -76,6 +83,7 @@ const data = [
     </Link>,
   },
   {
+    id:8,
     label:
     <Link to='/admin/Magazines_management'>
       <div className='flex items-center gap-5 py-2'>
@@ -85,6 +93,7 @@ const data = [
     </Link>,
   },
   {
+    id:9,
     label:
     <Link to='/admin/messages'>
       <div className='flex items-center gap-5 py-2'>
@@ -94,6 +103,7 @@ const data = [
     </Link>,
   },
   {
+    id:10,
     label:
     <Link to='/'>
       <div className='flex items-center gap-5 py-2'>
@@ -111,8 +121,9 @@ const SideBar = () => {
 
   const items = data.map((item, index) => (
     <NavLink
+    
       href="#required-for-focus"
-      key={item.label}
+      key={item.id}
       active={index === active}
       label={item.label}
       rightSection={item.rightSection}
